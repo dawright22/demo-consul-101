@@ -1,5 +1,5 @@
 variable "prefix" {
-  default = "demo"
+  default = "demo-dr@hashicorp"
 }
 
 variable "appId" {
