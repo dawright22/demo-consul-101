@@ -1,13 +1,3 @@
-variable "prefix" {
-  default = "demo"
-}
-
-variable "appId" {
-}
-
-variable "password" {
-}
-
 provider "azurerm" {
   version = "~> 1.27.0"
 }
