@@ -38,15 +38,15 @@ resource "azurerm_kubernetes_cluster" "default" {
     environment = "Demo"
   }
 
-  provisioner "local-exec" {
-    # Load credentials to local environment so subsequent kubectl commands can be run
-    command = <<EOS
-      az aks get-credentials --resource-group ${azurerm_resource_group.default.name} --name ${self.name};
+#  provisioner "local-exec" {
+#   # Load credentials to local environment so subsequent kubectl commands can be run
+#   command = <<EOS
+#     az aks get-credentials --resource-group ${azurerm_resource_group.default.name} --name ${self.name};
 
-EOS
+#EOS
 
-  }
-}
+ # }
+#}
 
 output "resource_group_name" {
   value = azurerm_resource_group.default.name
