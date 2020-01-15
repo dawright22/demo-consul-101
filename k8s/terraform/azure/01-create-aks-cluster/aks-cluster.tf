@@ -7,7 +7,7 @@ resource "azurerm_resource_group" "default" {
   location = "West US 2"
 
   tags = {
-    environment = "Demo"
+    environment = "Demo-dr@hashicorp"
   }
 }
 
